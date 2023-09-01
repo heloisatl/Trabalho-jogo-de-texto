@@ -131,9 +131,9 @@ fim()
     funcao next (){
     	inteiro tempo2
 	cadeia nextt
-      escreva("\n\n\n\n _________________________\n")
-    	 escreva("|press [enter] to continue|\n")
-    	  escreva(" ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾              ")
+			escreva("╔═════════════════════════╗ \n")         
+			escreva("║ Press ENTER to continue ║ \n")
+			escreva("╚═════════════════════════╝ \n")		
           u.aguarde(500)        
            leia(nextt)
            limpa()                                                                               
@@ -144,17 +144,24 @@ fim()
        
 		para(tempo=0;tempo<5;tempo++)
 		{
+			
 			escreva("		 ######  ########       ##    ###       ########  ######## ##     ##         ##     ## #### ##    ## ########   #######   \n")
+			u.aguarde(100)
 			escreva("		##    ## ##             ##   ## ##      ##     ## ##       ###   ###         ##     ##  ##  ###   ## ##     ## ##     ## \n")
+			u.aguarde(100)
 			escreva("		##       ##             ##  ##   ##     ##     ## ##       #### ####         ##     ##  ##  ####  ## ##     ## ##     ## \n")
+			u.aguarde(100)
 			escreva("		 ######  ######         ## ##     ##    ########  ######   ## ### ## ####### ##     ##  ##  ## ## ## ##     ## ##     ## \n")
+			u.aguarde(100)
 			escreva("		      ## ##       ##    ## #########    ##     ## ##       ##     ##          ##   ##   ##  ##  #### ##     ## ##     ## \n")
+			u.aguarde(100)
 			escreva("		##    ## ##       ##    ## ##     ##    ##     ## ##       ##     ##           ## ##    ##  ##   ### ##     ## ##     ## \n")
+			u.aguarde(100)
 			escreva("		 ######  ########  ######  ##     ##    ########  ######## ##     ##            ###    #### ##    ## ########   #######  \n")
 			
-			u.aguarde(500)
+			u.aguarde(200)
 			limpa()
-          	u.aguarde(500)                                                                                       
+          	u.aguarde(200)                                                                                       
 		}
        	u.aguarde(1000)
         	limpa()
@@ -207,6 +214,7 @@ fim()
     		sorteiaEstado()
 		u.aguarde(1000)
 		escreva("				CONTEXTO\n\n")
+		
 		escreva_devagar("[NARRADOR] "+usuario+" era um camponês humilde, do interior do "+estado+" que não tinha muitas esperanças para o futuro. \n[NARRADOR] No sítio onde você vivia não havia escolas nas redondezas, logo você não tinha amigos, e nem estudo. \n") 
 		u.aguarde(500)
 		next()
@@ -271,7 +279,7 @@ fim()
         }
       
       funcao calvin(){
-      		escreva_devagar("[NARRADOR] Você decidiu pedir ajuda a seu vizinho, Calvin, que já era um homem experiente em cuidar de lavouras.\n[NARRADOR] Escolheu pedir ajuda a ele principalmente por conta da distância.\n[NARRADOR] Porque achou que seria melhor e mais prático pedir ajuda a alguém que mora a menos de um quarteirão de distância de sua moradia. Decida como você vai se comunicar com ele.\n\n\n")		 
+      		escreva_devagar("[NARRADOR] Você decidiu pedir ajuda a seu vizinho, Calvin, que já era um homem experiente em cuidar de lavouras.\n[NARRADOR] Escolheu pedir a ajuda dele principalmente por conta da distância.\n[NARRADOR] Porque achou que seria melhor e mais prático pedir ajuda a alguém que mora a menos de um quarteirão de distância de sua moradia. Decida como você vai se comunicar com ele.\n\n\n")		 
 
       		escreva("							ESCOLHA\n\n")
       		escreva("1 -- LIGAR PARA O VIZINHO COM O TELEFONE ANTIGO DE SEUS PAIS\n")
@@ -703,7 +711,7 @@ fim()
 	{ //uma espécie de "escreva()" porém pausadamente. 
 							
 		caracter letra
-		inteiro velocidade = 50 //pausa padrão entre um caracter e outro.
+		inteiro velocidade = 40 //pausa padrão entre um caracter e outro.
 		
 		para(inteiro i = 0 ; i < tx.numero_caracteres(texto) ; i++){ //repete enquanto a frase inteiro não for escrita.
 			letra = tx.obter_caracter(texto, i) //obtem o caracter da frase.
