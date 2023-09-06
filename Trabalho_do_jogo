@@ -131,6 +131,7 @@ fim()
     funcao next (){
     	inteiro tempo2
 	cadeia nextt
+			escreva("\n\n\n\n\n\n\n\n\n\n\n\n")
 			escreva("╔═════════════════════════╗ \n")         
 			escreva("║ Press ENTER to continue ║ \n")
 			escreva("╚═════════════════════════╝ \n")		
